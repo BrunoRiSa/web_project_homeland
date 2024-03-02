@@ -1,0 +1,121 @@
+/* consertar no media query margin de grid cities */
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta__bg {
+  max-width: 1184px;
+  width: 100%;
+  height: 100%;
+  max-height: 740px;
+  background-image: linear-gradient(
+      rgba(42, 44, 47, 0.3),
+      rgba(42, 44, 47, 0.3)
+    ),
+    url("../images/__background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta__bg:hover {
+  background-image: linear-gradient(
+      rgba(42, 44, 47, 0.8),
+      rgba(42, 44, 47, 0.8)
+    ),
+    url("../images/__background.jpg");
+}
+
+.cta__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 243px 264px;
+}
+
+.cta__title {
+  font-family: Inter;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(255, 253, 253, 1);
+  margin-bottom: 32px;
+}
+
+.cta__txt {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  /* max-width: 280px; */
+  margin-bottom: 32px;
+}
+
+.cta__txt-span {
+  display: block;
+}
+
+.cta__btn {
+  background-color: rgba(2, 120, 254, 1);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 13px 20px;
+  color: white;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+}
+
+.cta__btn:hover {
+  background-color: #0063d2;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .cta__content {
+    padding: 246px 56px;
+  }
+}
+
+@media (max-width: 720px) {
+  .cta {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cta__content {
+    padding: 46px 16px;
+  }
+
+  .cta__title {
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .cta__txt {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 16px;
+  }
+}
