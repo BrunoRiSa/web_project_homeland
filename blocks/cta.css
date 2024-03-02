@@ -97,11 +97,6 @@
 }
 
 @media (max-width: 720px) {
-  .cta {
-    height: 100%;
-    width: 100%;
-  }
-
   .cta__content {
     padding: 46px 16px;
   }
